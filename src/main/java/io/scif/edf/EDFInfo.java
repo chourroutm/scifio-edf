@@ -23,7 +23,7 @@
  * #L%
  */
 
-package io.scif.lifesci;
+package io.scif.edf;
 
 import io.scif.MetaTable;
 import io.scif.common.Constants;

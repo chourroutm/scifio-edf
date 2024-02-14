@@ -23,7 +23,7 @@
  * #L%
  */
 
-package io.scif.lifesci;
+package io.scif.edf;
 
 import io.scif.AbstractFormat;
 import io.scif.AbstractMetadata;
@@ -49,25 +49,24 @@ import org.scijava.plugin.Plugin;
 import org.scijava.util.Bytes;
 
 /**
- * SDTReader is the file format reader for Becker &amp; Hickl SPC-Image SDT
+ * EDFReader is the file format reader for European Data Format
  * files.
  * 
- * @author Curtis Rueden
- * @author Mark Hiner
+ * @author Matthieu Chourrout
  */
 @Plugin(type = Format.class)
-public class SDTFormat extends AbstractFormat {
+public class EDFFormat extends AbstractFormat {
 
 	// -- Format API Methods --
 
 	@Override
 	public String getFormatName() {
-		return "SPCImage Data";
+		return "European Data Format";
 	}
 
 	@Override
 	protected String[] makeSuffixArray() {
-		return new String[] { "sdt" };
+		return new String[] { "edf" };
 	}
 
 	// -- Nested Classes --
@@ -79,8 +78,8 @@ public class SDTFormat extends AbstractFormat {
 
 		// -- Fields --
 
-		/** Object containing SDT header information. */
-		private SDTInfo info;
+		/** Object containing EDF header information. */
+		private EDFInfo info;
 
 		/** Offset to binary data. */
 		private int binOffset;

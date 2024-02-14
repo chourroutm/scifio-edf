@@ -10,12 +10,12 @@
 	</parent>
 
 	<groupId>io.scif</groupId>
-	<artifactId>scifio-lifesci</artifactId>
+	<artifactId>scifio-edf</artifactId>
 	<version>0.9.1-SNAPSHOT</version>
 
-	<name>SCIFIO Life Sciences Extension</name>
-	<description>Provides SCIFIO support for proprietary life science formats.</description>
-	<url>https://github.com/scifio/scifio-lifesci</url>
+	<name>SCIFIO EDF Extension</name>
+	<description>Provides SCIFIO support for European Data Format.</description>
+	<url>https://github.com/chourroutm/scifio-edf</url>
 	<inceptionYear>2013</inceptionYear>
 	<organization>
 		<name>SCIFIO</name>
@@ -71,28 +71,28 @@
 	</mailingLists>
 
 	<scm>
-		<connection>scm:git:https://github.com/scifio/scifio-lifesci</connection>
-		<developerConnection>scm:git:git@github.com:scifio/scifio-lifesci</developerConnection>
+		<connection>scm:git:https://github.com/chourroutm/scifio-edf</connection>
+		<developerConnection>scm:git:git@github.com:chourroutm/scifio-edf</developerConnection>
 		<tag>HEAD</tag>
-		<url>https://github.com/scifio/scifio-lifesci</url>
+		<url>https://github.com/chourroutm/scifio-edf</url>
 	</scm>
 	<issueManagement>
 		<system>GitHub Issues</system>
-		<url>https://github.com/scifio/scifio-lifesci/issues</url>
+		<url>https://github.com/chourroutm/scifio-edf/issues</url>
 	</issueManagement>
 	<ciManagement>
 		<system>GitHub Actions</system>
-		<url>https://github.com/scifio/scifio-lifesci/actions</url>
+		<url>https://github.com/chourroutm/scifio-edf/actions</url>
 	</ciManagement>
 
 	<properties>
-		<package-name>io.scif.lifesci</package-name>
+		<package-name>io.scif.edf</package-name>
 		<license.licenseName>gpl_v2</license.licenseName>
 		<license.copyrightOwners>Open Microscopy Environment:
 	- Board of Regents of the University of Wisconsin-Madison
 	- Glencoe Software, Inc.
 	- University of Dundee</license.copyrightOwners>
-		<license.projectName>SCIFIO Life Sciences Extension</license.projectName>
+		<license.projectName>SCIFIO EDF Extension</license.projectName>
 
 		<!-- NB: Deploy releases to the SciJava Maven repository. -->
 		<releaseProfiles>sign,deploy-to-scijava</releaseProfiles>
